@@ -1,0 +1,152 @@
+/*Structure*/
+
+body {
+	background-color: rgb(247,247,247);
+}
+
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+}
+
+#nav {
+	width: 200px;
+	float: left;
+	position: fixed;
+}
+
+#navitems {
+	padding-left: 15px;
+	border-left-width: 1px;
+	border-left-color: #0093C8;
+	border-left-style: solid;
+}
+
+#intro {
+	float: right;
+	width: 700px;
+}
+
+#visual {
+	float: right;
+	width: 700px;
+}
+
+#color-blue {
+	height: 220px;
+	width: 220px;
+	background-color: #0093C8;
+	margin-right: 10px;
+	float: left;
+}
+
+#color-green {
+	height: 220px;
+	width: 220px;
+	background-color: #99CA3C;
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+}
+
+#color-grey {
+	height: 220px;
+	width: 220px;
+	background-color: #404041;
+	margin-left: 10px;
+	float: left;
+}
+
+#verbal {
+	float: right;
+	width: 700px;
+}
+
+#team {
+	float: right;
+	width:700px;
+}
+
+/*Type & Links*/
+
+h1 {
+	font-family: 'Oswald', Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 60px;
+	color: #404041;
+}
+
+h2 {
+	font-family: 'Oswald', Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 42px;
+	color: #99CA3C;
+	margin-top: 30px;
+}
+
+h3 {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-weight: 700;
+	color: #404041;
+	margin-top: 50px;
+}
+
+p {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
+	color: #404041;
+}
+
+#navitems li {
+	list-style: none;
+}
+
+#color-blue p, #color-green p, #color-grey p {
+	font-size: 20px;
+	font-weight: 300;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 30px;
+}
+
+li {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
+	color: #404041;
+}
+
+a {
+	text-decoration: none;
+	color: #0093C8;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #99CA3C;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #99CA3C;
+}
+
+blockquote {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	color: #acacac;
+}
+
+/*Images*/
+
+.example {
+	border: 1px solid #0093C8;
+}
