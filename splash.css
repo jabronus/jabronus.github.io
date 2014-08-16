@@ -54,13 +54,14 @@ html {
 
 p {
 	color: #FFFFFF;
-	font-family: 'Source Code Pro', sans-serif;
-	font-size: 20px;
+	font-family: 'Karla', sans-serif;
+	font-size: 28px;
+	text-weight: normal;
 }
 			
 a {
 	text-decoration: none;
-	color: #ffea00;
+	color: #1affbc;
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;

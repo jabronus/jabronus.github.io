@@ -56,7 +56,7 @@ time {
 
 .pull {
 	font-family: 'Karla', sans-serif;
-	font-weight: 700;
+	font-weight: normal;
 	font-size: 22px;
 	line-height: 28px;
 	-webkit-font-smoothing: antialiased;
