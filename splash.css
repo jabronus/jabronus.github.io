@@ -1,0 +1,72 @@
+/*Background Image*/
+
+html { 
+	background: url(images/herrington.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*Page Structure*/
+
+#body {
+	margin-left: 0px;
+	border: 5px solid #FFFFFF;
+}
+				
+#content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 500px;
+}
+			
+#mantra {
+	width: 498px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+				
+#born {
+	width: 100%;
+	margin-bottom: 28px;
+}
+			
+#further {
+	text-align: center;
+}
+			
+#logo {
+	width: 50px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+			
+#npossible {
+	width: 100%;
+	margin-bottom: 50px;
+}
+			
+/*Type & Link Styling*/
+
+p {
+	color: #FFFFFF;
+	font-family: 'Source Code Pro', sans-serif;
+	font-size: 20px;
+}
+			
+a {
+	text-decoration: none;
+	color: #ffea00;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+			
+a:hover {
+	color: #ffffff;
+}
