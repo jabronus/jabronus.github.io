@@ -1,0 +1,64 @@
+/*Structure*/
+
+body {
+	background-color: rgb(247,247,247);
+}
+
+#wrapper {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 120px;
+}
+
+/*Type Styles*/
+
+h1 {
+	font-family: 'Karla', sans-serif;
+	text-decoration: none;
+	font-weight: normal;
+	color: #1affbc;
+	font-size: 42px;
+	line-height: 40px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	margin-bottom: 10px;
+}
+
+p {
+	font-family: 'Merriweather', serif;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	text-decoration: none;
+	color: #1affbc;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #000000;
+}
+
+time {
+	font-family: 'Karla', sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	color: rgba(181,196,199,1);
+}
+
+.pull {
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 28px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
