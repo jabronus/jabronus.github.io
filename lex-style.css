@@ -14,7 +14,6 @@ body {
 footer {
 	background-color: rgba(0,0,0,1);
 	width: 100%;
-	height: 300px;
 	margin-top: 25px;
 }
 
@@ -23,6 +22,18 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 25px;
+}
+
+#logo {
+	width: 50px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#npossible {
+	width: 100%;
+	margin-bottom: 50px;
 }
 
 /*Type Styles*/
@@ -76,6 +87,10 @@ a {
 
 a:hover {
 	color: #000000;
+}
+
+#foot-wrap a:hover {
+	color: #ffffff;
 }
 
 li {
