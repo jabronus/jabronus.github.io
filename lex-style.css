@@ -2,6 +2,8 @@
 
 body {
 	background-color: rgba(248,248,248,1);
+	font-family: 'Karla', sans-serif;
+	font-weight: normal;
 }
 
 #wrapper {
@@ -14,14 +16,14 @@ body {
 footer {
 	background-color: rgba(0,0,0,1);
 	width: 100%;
-	margin-top: 25px;
+	margin-top: 50px;
 }
 
 #foot-wrap {
 	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 25px;
+	padding-top: 50px;
 }
 
 #logo {
@@ -39,10 +41,8 @@ footer {
 /*Type Styles*/
 
 h1 {
-	font-family: 'Karla', sans-serif;
-	text-decoration: none;
 	font-weight: normal;
-	color: #1affbc;
+	color: #ff4af6;
 	font-size: 42px;
 	line-height: 40px;
 	-webkit-font-smoothing: antialiased;
@@ -51,8 +51,6 @@ h1 {
 }
 
 h2 {
-	font-family: 'Karla', sans-serif;
-	text-decoration: none;
 	font-weight: 700;
 	font-size: 22px;
 	margin-top: 30px;
@@ -64,21 +62,20 @@ h3 {
 
 p, h3 {
 	font-family: 'Merriweather', serif;
-	font-weight: normal;
 	font-size: 20px;
 	line-height: 30px;
 }
 
 #foot-wrap p {
-	color: white;
 	font-family: 'Karla', sans-serif;
 	font-weight: normal;
+	color: white;
 	font-size: 18px;
 }
 
 a {
 	text-decoration: none;
-	color: #1affbc;
+	color: #ff4af6;
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
@@ -89,22 +86,22 @@ a:hover {
 	color: #000000;
 }
 
+#foot-wrap a {
+	color: #1affbc
+}
+
 #foot-wrap a:hover {
 	color: #ffffff;
 }
 
 li {
-	font-family: 'Karla', sans-serif;
-	text-decoration: none;
-	font-weight: normal;
 	font-size: 18px;
 	line-height: 25px;
 	margin-bottom: 2px;
 }
 
 time {
-	font-family: 'Karla', sans-serif;
-	font-weight: normal;
+
 	font-size: 13px;
 	color: rgba(181,196,199,1);
 }
