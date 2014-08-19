@@ -25,7 +25,7 @@ body {
 	border-left-style: solid;
 }
 
-.intro, .visual, .verbal, .team  {
+#intro, #visual, #verbal, #team  {
 	float: right;
 	width: 700px;
 }
