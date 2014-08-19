@@ -3,10 +3,10 @@
 body {
 	background-color: rgba(248,248,248,1);
 	font-family: 'Karla', sans-serif;
-	font-weight: normal;
+	text-decoration: none;
 }
 
-#wrapper {
+.wrapper {
 	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
@@ -19,21 +19,21 @@ footer {
 	margin-top: 50px;
 }
 
-#foot-wrap {
+.foot-wrap {
 	width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
 }
 
-#logo {
+.logo {
 	width: 50px;
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#npossible {
+.npossible {
 	width: 100%;
 	margin-bottom: 50px;
 }
@@ -58,6 +58,7 @@ h2 {
 
 h3 {
 	font-style: italic;
+	font-weight: normal;
 }
 
 p, h3 {
@@ -66,9 +67,8 @@ p, h3 {
 	line-height: 30px;
 }
 
-#foot-wrap p {
+.foot-wrap p {
 	font-family: 'Karla', sans-serif;
-	font-weight: normal;
 	color: white;
 	font-size: 18px;
 }
@@ -86,11 +86,11 @@ a:hover {
 	color: #000000;
 }
 
-#foot-wrap a {
+.foot-wrap a {
 	color: #1affbc
 }
 
-#foot-wrap a:hover {
+.foot-wrap a:hover {
 	color: #ffffff;
 }
 
