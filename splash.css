@@ -1,7 +1,7 @@
 /*Background Image*/
 
 html { 
-	background: url(images/lexington.jpg) no-repeat center center fixed; 
+	background: url(images/dusktrees.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -15,37 +15,37 @@ html {
 	border: 5px solid #FFFFFF;
 }
 				
-#content {
+.content {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100px;
 	width: 500px;
 }
 			
-#mantra {
+.mantra {
 	width: 498px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 }
 				
-#born {
+.born {
 	width: 100%;
 	margin-bottom: 28px;
 }
 			
-#further {
+.further {
 	text-align: center;
 }
 			
-#logo {
+.logo {
 	width: 50px;
 	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
 }
 			
-#npossible {
+.npossible {
 	width: 100%;
 	margin-bottom: 50px;
 }

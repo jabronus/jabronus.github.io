@@ -1,6 +1,9 @@
 /*Structure*/
 
 body {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
 	background-color: rgba(248,248,248,1);
 	font-family: 'Karla', sans-serif;
 	text-decoration: none;
