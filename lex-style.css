@@ -4,7 +4,7 @@ body {
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
-	background-color: rgba(248,248,248,1);
+	background-color: #ffffff;
 	font-family: 'Karla', sans-serif;
 	text-decoration: none;
 }
@@ -45,7 +45,7 @@ footer {
 
 h1 {
 	font-weight: normal;
-	color: #ff4af6;
+	color: #6de1c5;
 	font-size: 42px;
 	line-height: 40px;
 	-webkit-font-smoothing: antialiased;
@@ -78,7 +78,7 @@ p, h3 {
 
 a {
 	text-decoration: none;
-	color: #ff4af6;
+	color: #6de1c5;
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
@@ -87,10 +87,6 @@ a {
 
 a:hover {
 	color: #000000;
-}
-
-.foot-wrap a {
-	color: #1affbc
 }
 
 .foot-wrap a:hover {
