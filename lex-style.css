@@ -43,6 +43,10 @@ footer {
 
 /*Type Styles*/
 
+::selection {
+	background: #6de1c5;
+}
+
 h1 {
 	font-weight: normal;
 	color: #6de1c5;
@@ -76,6 +80,10 @@ p, h3 {
 	font-size: 18px;
 }
 
+a::selection {
+	color: #000000;
+}
+
 a {
 	text-decoration: none;
 	color: #6de1c5;
@@ -100,7 +108,6 @@ li {
 }
 
 time {
-
 	font-size: 13px;
 	color: rgba(181,196,199,1);
 }
