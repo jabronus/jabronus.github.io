@@ -47,6 +47,10 @@ footer {
 	background: #6de1c5;
 }
 
+a::selection {
+	color: #000000;
+}
+
 h1 {
 	font-weight: normal;
 	color: #6de1c5;
@@ -78,10 +82,6 @@ p, h3 {
 	font-family: 'Karla', sans-serif;
 	color: white;
 	font-size: 18px;
-}
-
-a::selection {
-	color: #000000;
 }
 
 a {
