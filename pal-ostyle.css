@@ -23,7 +23,7 @@ header {
 	text-align: center;
 }
 
-.what-section, .where-section, .when-section, .kid-section, .dress-section, .byob-section {
+.what-section, .where-section, .when-section, .park-section, .kid-section, .dress-section, .byob-section {
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
@@ -59,7 +59,7 @@ footer {
 
 /*Images*/
 
-.made {
+.candies {
 	margin-top: 10px;
 }
 
