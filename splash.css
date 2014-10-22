@@ -50,3 +50,14 @@ a:hover {
 	color: #ffe83e;
 	border-bottom: 2px dotted #ffe83e;
 }
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+html {
+	font-size: 1.7em;
+	line-height: 1.4em;
+}
+
+#main {
+	padding: .75em .75em;
+}
