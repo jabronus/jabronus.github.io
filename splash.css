@@ -1,69 +1,45 @@
-/*Background Image*/
+/*Background*/
 
 html { 
-	background: url(images/dusktrees.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: #2ccfa2;
+	/*-webkit-font-smoothing: antialiased;*/
+	font-family: 'Chivo', sans-serif;
+	font-size: 26px;
+	line-height: 37px;
+	font-weight: normal;
 }
 
 /*Page Structure*/
 
 #body {
 	margin-left: 0px;
-	border: 5px solid #FFFFFF;
-}
-				
-
-.content, .mantra, .maker, .further {
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
 }
 
-.content {
-	margin-top: 100px;
+.main {
+	max-width: 450px;
+	margin: auto;
+	padding: 3em 1em;
 }
 			
-.mantra {
-	max-width: 680;
-	text-align: center;
-}
-				
-.maker {
-	margin-bottom: 28px;
-}
-			
-.further {
-	text-align: center;
-	max-width: 680px;
-}
-			
+/*Logo*/
+
 .logo {
+	height: 50px;
 	width: 50px;
-	margin-top: 80px;
-	margin-left: auto;
-	margin-right: auto;
+	background: url(images/npossible.svg) no-repeat;
+	background-size: 100%;
 }
-			
-.npossible {
-	width: 100%;
-	margin-bottom: 50px;
-}
-			
+
 /*Type & Link Styling*/
 
 p {
 	color: #FFFFFF;
-	font-family: 'Karla', sans-serif;
-	font-size: 28px;
-	text-weight: normal;
 }
 			
 a {
 	text-decoration: none;
-	color: #6de1c5;
+	color: #FFFFFF;
+	border-bottom: 2px dotted white;
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
@@ -71,5 +47,6 @@ a {
 }
 			
 a:hover {
-	color: #ffffff;
+	color: #ffe83e;
+	border-bottom: 2px dotted #ffe83e;
 }
