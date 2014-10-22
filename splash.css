@@ -56,12 +56,17 @@ a:hover {
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 
 html {
-	font-size: 1.7em;
-	line-height: 1.7em;
+	font-size: 1.6em;
+	line-height: 1.6em;
 }
 
 .main {
 	padding: .75em .75em;
+}
+
+.logo {
+	height: 60px;
+	width: 60px;
 }
 
 }
