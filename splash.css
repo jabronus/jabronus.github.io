@@ -51,6 +51,8 @@ a:hover {
 	border-bottom: 2px dotted #ffe83e;
 }
 
+/*Resposive-bility*/
+
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 
 html {
@@ -58,6 +60,8 @@ html {
 	line-height: 1.4em;
 }
 
-#main {
+.main {
 	padding: .75em .75em;
+}
+
 }
