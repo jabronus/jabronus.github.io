@@ -69,6 +69,13 @@ a:hover {
 	margin-top: 2em;
 }
 
+::selection {
+	background: #ffe83e;
+}
+
+a::selection {
+	color: #FFFFFF;
+
 /*Resposive-bility*/
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
