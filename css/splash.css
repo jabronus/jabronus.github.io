@@ -26,13 +26,13 @@ html {
 .face {
 	height: 4em;
 	width: 4em;
-	background: url(images/face.png) no-repeat;
+	background: url(../images/face.png) no-repeat;
 	background-size: 100%;
 	margin-bottom: 2em;
 }
 
 .face:hover {
-	background: url(images/face-alt.png) no-repeat;
+	background: url(../images/face-alt.png) no-repeat;
 	background-size: 100%;
 }
 
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .made {
-	background: url(images/made-in-lex.svg) no-repeat;
+	background: url(../images/made-in-lex.svg) no-repeat;
 	background-size: 100%;
 	width: 5.5em;
 	margin-top: 2em;
