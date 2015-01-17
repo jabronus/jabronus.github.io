@@ -1,0 +1,154 @@
+/*Structure*/
+
+html {
+	background-color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	overflow-x:hidden;
+}
+
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	overflow-x:hidden;
+}
+
+.top-color {
+	background-color: #ABA134;
+	height: 10px;
+}
+
+.wrapper {
+	max-width: 700px;
+	margin: auto;
+	padding: 4em 1.5em;
+}
+
+.section {
+	padding-bottom: 4em;
+	padding-top: 4em;
+}
+
+#building, #shield, #book {
+	margin: 0 -9999rem;
+ 	/* add back negative margin value */
+ 	padding: 4rem 9999rem;
+}
+
+/*Global Type Styles*/
+
+::selection {
+	background: #ABA134;
+}
+
+a::selection {
+	color: #FFFFFF;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 44px;
+	font-weight: 900;
+	color: #ABA134;
+	margin-top: -.3em;
+	margin-bottom: -.3em;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 34px;
+}
+
+h3 {
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+	font-weight: normal;
+	color: #ABA134;
+	font-size: 24px;
+	margin-bottom: 2em;
+}
+
+p {
+	font-family: 'Merriweather', serif;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+a {
+	text-decoration: none;
+	color: #ABA134;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+li {
+	font-weight: normal;
+	color: #ABA134;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: .5em;
+}
+
+a:hover {
+	color: #232D2F;
+}
+
+/*Section Type & Color Styles*/
+
+#intro p {
+	color: #232D2F;
+}
+
+#building {
+	background-color: #F26847;
+}
+
+#building, #book h2, p {
+	color: #FFFFFF;
+}
+
+#shield p {
+	color: #232D2F;
+}
+
+#shield h2 {
+	color: #ABA134;
+}
+
+#book {
+	background-color: #006a55;
+}
+
+#outro h1 {
+	margin-top: 0em;
+}
+
+#outro p {
+	color: #232D2F;
+	margin-top: 3em;
+}
+ 
+
+/*Images*/
+
+.example {
+	width: 100%;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+/*Responsive-bility*/
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+.wrapper, {
+	padding: 2em 1em;
+}
+
+}
