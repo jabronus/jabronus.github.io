@@ -147,8 +147,19 @@ a:hover {
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 
-.wrapper, {
+.wrapper {
 	padding: 2em 1em;
+}
+
+#building, #shield, #book {
+	margin: 0 -9999rem;
+ 	/* add back negative margin value */
+ 	padding: 1rem 9999rem;
+}
+
+p {
+	font-size: 16px;
+	line-height: 28px;
 }
 
 }
