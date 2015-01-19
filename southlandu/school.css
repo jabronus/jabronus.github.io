@@ -121,10 +121,6 @@ a:hover {
 	color: #ABA134;
 }
 
-#shield p::selection {
-	background-color: #FFFFFF;
-}
-
 #book {
 	background-color: #006a55;
 }
@@ -147,6 +143,12 @@ a:hover {
 	margin-bottom: .5em;
 }
 
+.gif {
+	width: 100%;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
 /*Responsive-bility*/
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
@@ -164,6 +166,10 @@ a:hover {
 p {
 	font-size: 16px;
 	line-height: 28px;
+}
+
+.gif {
+	-webkit-transform: translateZ(0);
 }
 
 }
