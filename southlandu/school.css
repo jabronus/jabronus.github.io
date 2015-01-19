@@ -121,6 +121,10 @@ a:hover {
 	color: #ABA134;
 }
 
+#shield p::selection {
+	background-color: #FFFFFF;
+}
+
 #book {
 	background-color: #006a55;
 }
