@@ -1,9 +1,9 @@
 /*Background*/
 
 html { 
-	background: #22D686;
+	background: #0061fb;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'Chivo', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6em;
 	line-height: 1.5em;
 	font-weight: normal;
@@ -23,22 +23,25 @@ html {
 			
 /*Images*/
 
-.face {
-	height: 4em;
-	width: 4em;
-	background: url(../images/face.png) no-repeat;
+.logo {
+	height: 3em;
+	width: 3em;
+	background: url(../images/logo.png) no-repeat;
 	background-size: 100%;
 	margin-bottom: 2em;
 }
 
-.face:hover {
-	background: url(../images/face-alt.png) no-repeat;
+.logo:hover {
+	background: url(../images/spin.gif) no-repeat;
 	background-size: 100%;
 }
 
-.made {
+.trust {
 	height: 2em;
+	width: 2em;
 	margin-top: 1.5em;
+	background: url(../images/trusty.gif) no-repeat;
+	background-size: 100%;
 }
 
 /*Type & Link Styling*/
@@ -50,7 +53,7 @@ p {
 a {
 	text-decoration: none;
 	color: #FFFFFF;
-	border-bottom: 2px dotted white;
+	border-bottom: 3px solid white;
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
@@ -58,23 +61,16 @@ a {
 }
 			
 a:hover {
-	color: #ffe83e;
-	border-bottom: 2px dotted #ffe83e;
-}
-
-.made {
-	background: url(../images/made-in-lex.svg) no-repeat;
-	background-size: 100%;
-	width: 5.5em;
-	margin-top: 2em;
+	color: #f9ec00;
+	border-bottom: none;
 }
 
 ::selection {
-	background: #ffe83e;
+	background: #f9ec00;
 }
 
 a::selection {
-	color: #FFFFFF;
+	color: #0061fb;
 }
 
 /*Resposive-bility*/
@@ -90,19 +86,16 @@ html {
 	padding: .75em .75em;
 }
 
-.face {
-	height: 6em;
-	width: 6em;
+.logo {
+	height: 3em;
+	width: 3em;
 	margin: auto;
 }
 
-.made {
-	background: url(images/made-in-vertical.svg) no-repeat;
-	background-size: 100%;
-	width: 4em;
-	height: 4em;
+.trust {
+	height: 2.5em;
+	width: 2.5em;
 	margin: auto;
-	margin-top: 2em;
 }
 
 }
