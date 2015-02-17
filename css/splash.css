@@ -90,12 +90,15 @@ html {
 	height: 3em;
 	width: 3em;
 	margin: auto;
+	margin-top: 1.5em;
+	margin-bottom: 2.5em;
 }
 
 .trust {
 	height: 2.5em;
 	width: 2.5em;
 	margin: auto;
+	margin-top: 2.5em;
 }
 
 }
