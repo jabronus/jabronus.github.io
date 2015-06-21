@@ -1,11 +1,11 @@
 /*Background*/
 
 html { 
-	background: #0061fb;
+	background: #F4D60E;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1.6em;
-	line-height: 1.5em;
+	font-family: 'NTR', sans-serif;
+	font-size: 1.7em;
+	line-height: 1.3em;
 	font-weight: normal;
 }
 
@@ -16,7 +16,7 @@ html {
 }
 
 .main {
-	max-width: 450px;
+	max-width: 600px;
 	margin: auto;
 	padding: 3em 1em;
 }
@@ -24,8 +24,8 @@ html {
 /*Images*/
 
 .logo {
-	height: 3em;
-	width: 3em;
+	height: 2em;
+	width: 2em;
 	background: url(../images/logo.png) no-repeat;
 	background-size: 100%;
 	margin-bottom: 2em;
@@ -47,13 +47,12 @@ html {
 /*Type & Link Styling*/
 
 p {
-	color: #FFFFFF;
+	color: #000000;
 }
 			
 a {
 	text-decoration: none;
-	color: #FFFFFF;
-	border-bottom: 3px solid white;
+	color: #B7A10B;
 	-webkit-transition: color 0.3s ease;
 	-moz-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
@@ -61,16 +60,20 @@ a {
 }
 			
 a:hover {
-	color: #f9ec00;
+	color: #000000;
 	border-bottom: none;
 }
 
 ::selection {
-	background: #f9ec00;
+	background: #000000;
+}
+
+p::selection {
+	color: #FFFFFF;
 }
 
 a::selection {
-	color: #0061fb;
+	color: #FFFFFF;
 }
 
 /*Resposive-bility*/
