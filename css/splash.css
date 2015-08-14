@@ -32,6 +32,7 @@ html {
 	width: 160px;
 	height: 206px;
 	background-image: url("../images/face.png");
+	background-repeat: no-repeat;
 	background-size: 100%;
 	margin-bottom: 30px;
 }
@@ -120,6 +121,26 @@ html {
 
 .main {
 	padding: .75em .75em;
+}
+
+.side {
+	margin: auto;
+	float: none;
+}
+
+.face {
+	width: 100px;
+	height: 129px;
+	background-size: 100%;
+	margin-bottom: -2.5em;
+}
+
+h1 {
+	font-size: 1.3em;
+}
+
+.footer {
+	text-align: center;
 }
 
 }
