@@ -107,12 +107,8 @@ a::selection {
 
 /*Resposive-bility*/
 
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-
-html {
-	font-size: 1.4em;
-	line-height: 1.6em;
-}
+/*Tablet*/
+@media only screen and (max-width: 680px), only screen and (max-device-width: 680px) {
 
 .main {
 	padding: .75em .75em;
@@ -127,14 +123,39 @@ html {
 	margin-bottom: .5em;
 }
 
+.content {
+	float: none;
+	margin: auto;
+}
+
 h1 {
-	font-size: 1.3em;
 	text-align: center;
 }
 
 .footer {
 	text-align: center;
 	margin-bottom: 2em;
+}
+
+
+/*Mobile*/
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+html {
+	font-size: 1.4em;
+	line-height: 1.6em;
+}
+
+h1 {
+	font-size: 1.3em;
+}
+
+ul {
+	font-size: .7em;
+	text-align: center;
+	-moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
 }
 
 }
