@@ -43,7 +43,7 @@ html {
 			
 /*Images*/
 
-.social {
+.social, .twit{
 	width: 40px;
 	margin-right: 24px;
 }
@@ -135,6 +135,10 @@ h1 {
 .footer {
 	text-align: center;
 	margin-bottom: 2em;
+}
+
+.twit {
+	margin-right: 0;
 }
 
 
