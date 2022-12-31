@@ -1,0 +1,177 @@
+/*Basics & Structure*/
+
+:root {
+	--dark: #040708;
+	--slate: #071216;
+	--gray: #94908C;
+	--paper: #F6F0EB;
+	--moss: #34788E;
+	--yellow: #F1B344;
+	--red: #DE5636;
+	--pink: #F1C6DD;
+	--blue: #0E2ADF;
+}
+
+@keyframes rotation {
+  from {
+	transform: rotate(0deg);
+  }
+  to {
+	transform: rotate(359deg);
+  }
+}
+
+html {
+	background: var(--slate);
+	text-rendering: optimizeLegibility;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-font-smoothing: antialiased;
+}
+
+body {
+	max-width: 720px;
+	margin: auto;
+	padding: 32px;
+}
+
+header, section {
+	margin-bottom: 64px;
+}
+
+#face {
+	width: 56px;
+	height: 56px;
+	margin-right: 44px;
+	animation: rotation 12s infinite linear;
+}
+
+section, header, footer, #face {
+	display: flex;
+	align-items: flex-start;
+	gap: 92px;
+}
+
+.label {
+	flex-basis: 100px;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+.block {
+	max-width: 528px;
+}
+
+.link {
+	display: flex;
+}
+
+/*Images & Icons*/
+
+.icon {
+	margin-right: 12px;
+	position: relative;
+	top: 2px;
+}
+
+/*Load Those WOFFs, Baybee*/
+
+@font-face  {
+	font-family: Mint Grotesk;
+	src: url("/fonts/Mint-Grotesk-Regular-V131.woff") format("woff");
+	font-weight: 400;
+}
+
+@font-face  {
+	font-family: Mint Grotesk;
+	src: url("/fonts/Mint-Grotesk-Medium-V131.woff") format("woff");
+	font-weight: 600;
+}
+
+@font-face  {
+	font-family: Capito;
+	src: url("/fonts/Capito03-Regular.woff") format("woff");
+	font-weight: 400;
+}
+
+@font-face  {
+	font-family: Inter;
+	src: url("/fonts/Inter-Regular.woff") format("woff");
+	font-weight: 400;
+}
+
+/*Type & Link Styling*/
+
+h1, h2 {
+	font-family: "Mint Grotesk", -apple-system, sans-serif;
+	margin: 0px;
+	margin-bottom: 16px;
+}
+
+h1 {
+	font-weight: 400;
+	color: var(--yellow);
+	font-size: 24px;
+	line-height: 30px;
+}
+
+h2 {
+	font-weight: 600;
+	color: var(--paper);
+	font-size: 16px;
+}
+
+h2.copyright {
+	color: var(--moss);
+}
+
+p {
+	font-family: "Capito", -apple-system, serif;
+	font-weight: 400;
+	color: var(--paper);
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0px;
+	margin-bottom: 24px;
+}
+
+p.mention, p.social {
+	font-family: "Inter", -apple-system, sans-serif;
+	color: var(--gray);
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 12px;
+}
+
+p.social {
+	width: 80px;
+	margin-right: 32px;
+}
+
+a {
+	color: var(--yellow);
+	text-decoration-skip: objects spaces;
+}
+
+a.social {
+	color: var(--pink);
+}
+
+a:hover, a:visited {
+	color: var(--pink);
+}
+
+/*Resposive-bility*/
+
+@media only screen and (max-width: 568px), only screen and (max-device-width: 568px) {
+
+#face {
+	margin-right: 0px;
+	margin-bottom: 32px;
+}
+
+section, header, footer, #face {
+	display: block;
+}
+
+}
+
