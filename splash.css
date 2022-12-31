@@ -51,6 +51,10 @@ section, header, footer, #face {
 	gap: 92px;
 }
 
+footer {
+	margin-bottom: 64px;
+}
+
 .label {
 	flex-basis: 100px;
 	flex-shrink: 0;
