@@ -109,6 +109,11 @@ footer {
 
 /*Type & Link Styling*/
 
+::selection {
+	background: var(--yellow);
+	color: var(--slate);
+}
+
 h1, h2 {
 	font-family: "Mint Grotesk", -apple-system, sans-serif;
 	margin: 0px;
