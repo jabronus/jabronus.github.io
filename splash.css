@@ -34,6 +34,10 @@ body {
 	padding: 32px;
 }
 
+header {
+	margin-top: 64px;
+}
+
 header, section {
 	margin-bottom: 64px;
 }
@@ -49,6 +53,10 @@ section, header, footer, #face {
 	display: flex;
 	align-items: flex-start;
 	gap: 92px;
+}
+
+footer {
+	margin-bottom: 64px;
 }
 
 .label {
@@ -100,6 +108,11 @@ section, header, footer, #face {
 }
 
 /*Type & Link Styling*/
+
+::selection {
+	background: var(--yellow);
+	color: var(--slate);
+}
 
 h1, h2 {
 	font-family: "Mint Grotesk", -apple-system, sans-serif;
@@ -163,6 +176,10 @@ a:hover, a:visited {
 /*Resposive-bility*/
 
 @media only screen and (max-width: 568px), only screen and (max-device-width: 568px) {
+
+header {
+	margin-top: 0px;
+}
 
 #face {
 	margin-right: 0px;
