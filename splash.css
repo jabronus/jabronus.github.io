@@ -189,6 +189,44 @@ header {
 section, header, footer, #face {
 	display: block;
 }
+}
+
+/*Light Mode*/
+
+@media (prefers-color-scheme: light) {
+html {
+	background: var(--paper);
+}
+
+h1 {
+	color: var(--red);
+}
+
+h2 {
+	font-weight: 600;
+	color: var(--slate);
+	font-size: 16px;
+}
+
+p {
+	color: var(--dark);
+}
+
+p.mention, p.social {
+	color: var(--moss);
+}
+
+a {
+	color: var(--red);
+}
+
+a.social {
+	color: var(--blue);
+}
+
+a:hover, a:visited {
+	color: var(--moss);
+}
 
 }
 
