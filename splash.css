@@ -2,13 +2,16 @@
 
 :root {
 	--dark: #040708;
-	--slate: #071216;
-	--gray: #94908C;
-	--paper: #F6F0EB;
+	--slate: #0F181F;
+	--gray: #7A8085;
+	--gray2: #535A5E;
+	--paper: #E5E5E5;
 	--moss: #34788E;
-	--yellow: #F1B344;
+	--yellow: #FFC400;
+	--purp: #7A00FF;
 	--red: #DE5636;
-	--pink: #F1C6DD;
+	--brown: #AE6C37;
+	--pink: #FFBFE1;
 	--blue: #0E2ADF;
 }
 
@@ -160,17 +163,32 @@ p.social {
 	margin-right: 32px;
 }
 
-a {
-	color: var(--yellow);
+a, a:visited {
+	color: var(--paper);
+	text-decoration-color: var(--yellow);
 	text-decoration-skip: objects spaces;
+	text-underline-offset: .2em;
+	text-decoration-style: wavy;
 }
 
 a.social {
 	color: var(--pink);
+	text-decoration-color: var(--pink);
 }
 
-a:hover, a:visited {
-	color: var(--pink);
+a.foot {
+	color: var(--gray);
+	text-decoration-color: var(--gray);
+}
+
+a.foot:hover {
+	color: var(--paper);
+	opacity: 100%;
+}
+
+a:hover {
+	text-decoration: none;
+	opacity: 75%;
 }
 
 /*Resposive-bility*/
@@ -191,42 +209,60 @@ section, header, footer, #face {
 }
 }
 
-/*Light Mode*/
+/*Commenting out this light mode stuff for now. Not sure I dig it outside of the blog content or other heavy-reading areas
 
 @media (prefers-color-scheme: light) {
+
 html {
 	background: var(--paper);
 }
 
 h1 {
-	color: var(--red);
+	color: var(--purp);
 }
 
 h2 {
-	font-weight: 600;
 	color: var(--slate);
-	font-size: 16px;
+}
+
+h2.copyright {
+	color: var(--moss);
 }
 
 p {
-	color: var(--dark);
+	color: var(--slate);
 }
 
 p.mention, p.social {
-	color: var(--moss);
+	color: var(--gray2);
 }
 
-a {
-	color: var(--red);
+a, a:visited {
+	color: var(--slate);
+	text-decoration-color: var(--purp);
 }
 
 a.social {
-	color: var(--blue);
+	color: var(--brown);
+	text-decoration-color: var(--brown);
 }
 
-a:hover, a:visited {
-	color: var(--moss);
+a.foot {
+	color: var(--gray2);
+	text-decoration-color: var(--gray2);
+}
+
+a.foot:hover {
+	color: var(--gray2);
+	opacity: 100%;
+}
+
+a:hover {
+	text-decoration: none;
+	opacity: 75%;
 }
 
 }
+
+*/
 
