@@ -5,7 +5,7 @@
 	--slate: #0F181F;
 	--gray: #7A8085;
 	--gray2: #535A5E;
-	--paper: #E5E5E5;
+	--paper: #F8F6F5;
 	--moss: #34788E;
 	--yellow: #FFC400;
 	--purp: #7A00FF;
@@ -137,7 +137,7 @@ h2 {
 }
 
 h2.copyright {
-	color: var(--moss);
+	color: var(--gray);
 }
 
 p {
@@ -166,9 +166,9 @@ p.social {
 a, a:visited {
 	color: var(--paper);
 	text-decoration-color: var(--yellow);
-	text-decoration-skip: objects spaces;
 	text-underline-offset: .2em;
-	text-decoration-style: wavy;
+	text-decoration-skip-ink: all;
+	text-decoration-thickness: auto;
 }
 
 a.social {
