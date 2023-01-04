@@ -1,0 +1,138 @@
+:root {
+	--text: #0F181F;
+	--gray: #7A8085;
+	--gray2: #535A5E;
+	--bg: #F8F6F5;
+	--focus: #7A00FF;
+	--highlight: #FFC400;
+}
+
+html {
+	background: var(--paper);
+	text-rendering: optimizeLegibility;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-font-smoothing: antialiased;
+}
+
+body {
+	max-width: 720px;
+	margin: auto;
+	padding: 32px;
+}
+
+/*Load Those WOFFs, Baybee*/
+
+@font-face  {
+	font-family: Mint Grotesk;
+	src: url("/fonts/Mint-Grotesk-Regular-V131.woff") format("woff");
+	font-weight: 400;
+}
+
+@font-face  {
+	font-family: Mint Grotesk;
+	src: url("/fonts/Mint-Grotesk-Medium-V131.woff") format("woff");
+	font-weight: 600;
+}
+
+@font-face  {
+	font-family: Mint Grotesk;
+	src: url("/fonts/Mint-Grotesk-Bold-V131.woff") format("woff");
+	font-weight: 700;
+}
+
+@font-face  {
+	font-family: Capito;
+	src: url("/fonts/Capito03-Regular.woff") format("woff");
+	font-weight: 400;
+}
+
+@font-face  {
+	font-family: Capito Italic;
+	src: url("/fonts/Capito03-RegularItalic.woff") format("woff");
+	font-weight: 400;
+}
+
+@font-face  {
+	font-family: Inter;
+	src: url("/fonts/Inter-Regular.woff") format("woff");
+	font-weight: 400;
+}
+
+@font-face  {
+	font-family: Inter;
+	src: url("/fonts/Inter-Medium.woff") format("woff");
+	font-weight: 600;
+}
+
+/*Type & Link Styling*/
+
+::selection {
+	background: var(--highlight);
+	color: var(--text);
+}
+
+h1, h2, blockquote {
+	font-family: "Mint Grotesk", -apple-system, sans-serif;
+	margin: 0px;
+	margin-bottom: 16px;
+}
+
+h1 {
+	font-weight: 700;
+	color: var(--focus);
+	font-size: 32px;
+	line-height: 40px;
+}
+
+h2 {
+	font-weight: 600;
+	color: var(--text);
+	font-size: 24px;
+	line-height: 28px;
+}
+
+h3 {
+	font-family: "Inter", -apple-system, sans-serif;
+	color: var(--gray);
+	font-size: 18px;
+	font-weight: 600;
+}
+
+p {
+	font-family: "Capito", -apple-system, serif;
+	font-weight: 400;
+	color: var(--text);
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0px;
+	margin-bottom: 24px;
+}
+
+em {
+   font-family: "Capito Italic", -apple-system, serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+blockquote {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	color: var(--text);
+	background: var(--highlight);
+	padding: 32px;
+	margin: 32px;
+}
+
+a, a:visited {
+	color: var(--text);
+	text-decoration-color: var(--focus);
+	text-decoration-skip-ink: all;
+	text-underline-offset: .2em;
+	text-decoration-thickness: auto;
+}
+
+a:hover {
+	text-decoration: none;
+	color: var(--focus);
+}
