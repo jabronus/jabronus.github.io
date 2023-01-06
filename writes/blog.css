@@ -1,14 +1,23 @@
 :root {
-	--text: #0F181F;
-	--gray: #7A8085;
-	--gray2: #535A5E;
-	--bg: #F8F6F5;
-	--focus: #7A00FF;
-	--highlight: #FFC400;
+	--text: 15, 24, 31;
+	--aside: 83, 90, 94;
+	--bg: 248, 246, 245;
+	--focus: 122, 0, 225;
+	--highlight: 255, 196, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+	--text: 248, 246, 245;
+	--aside: 248, 246, 245, .7;
+	--bg: 15, 24, 31;
+	--focus: 255, 196, 0;
+	--highlight: 122, 0, 225;
+}
 }
 
 html {
-	background: var(--paper);
+	background: rgb(var(--bg));
 	text-rendering: optimizeLegibility;
 	  -webkit-font-smoothing: antialiased;
 	  -moz-font-smoothing: antialiased;
@@ -18,6 +27,10 @@ body {
 	max-width: 720px;
 	margin: auto;
 	padding: 32px;
+}
+
+article {
+	margin-top: 64px
 }
 
 /*Load Those WOFFs, Baybee*/
@@ -41,98 +54,153 @@ body {
 }
 
 @font-face  {
-	font-family: Capito;
-	src: url("/fonts/Capito03-Regular.woff") format("woff");
+	font-family: HEX Franklin;
+	src: url("/fonts/HEX_Franklin_v0.2-Regular.woff2") format("woff");
 	font-weight: 400;
 }
 
 @font-face  {
-	font-family: Capito Italic;
-	src: url("/fonts/Capito03-RegularItalic.woff") format("woff");
-	font-weight: 400;
-}
-
-@font-face  {
-	font-family: Inter;
-	src: url("/fonts/Inter-Regular.woff") format("woff");
-	font-weight: 400;
-}
-
-@font-face  {
-	font-family: Inter;
-	src: url("/fonts/Inter-Medium.woff") format("woff");
+	font-family: HEX Franklin;
+	src: url("/fonts/HEX_Franklin_v0.2-Bold.woff2") format("woff");
 	font-weight: 600;
 }
 
 /*Type & Link Styling*/
 
 ::selection {
-	background: var(--highlight);
-	color: var(--text);
+	background: rgb(var(--highlight));
+	color: rgb(var(--text));
 }
 
 h1, h2, blockquote {
 	font-family: "Mint Grotesk", -apple-system, sans-serif;
 	margin: 0px;
-	margin-bottom: 16px;
 }
 
 h1 {
 	font-weight: 700;
-	color: var(--focus);
+	color: rgb(var(--focus));
 	font-size: 32px;
 	line-height: 40px;
+	margin-bottom: 32px;
 }
 
 h2 {
 	font-weight: 600;
-	color: var(--text);
+	color: rgb(var(--text));
 	font-size: 24px;
 	line-height: 28px;
+	margin-top: 80px;
+	margin-bottom: 40px;
 }
 
 h3 {
-	font-family: "Inter", -apple-system, sans-serif;
-	color: var(--gray);
-	font-size: 18px;
+	font-family: "HEX Franklin", -apple-system, sans-serif;
+	color: rgb(var(--aside));
+	font-size: 20px;
 	font-weight: 600;
-}
-
-p {
-	font-family: "Capito", -apple-system, serif;
-	font-weight: 400;
-	color: var(--text);
-	font-size: 18px;
-	line-height: 30px;
-	margin: 0px;
+	margin-top: 56px;
 	margin-bottom: 24px;
 }
 
-em {
+p, li {
+	font-family: "HEX Franklin", -apple-system, serif;
+	font-weight: 400;
+	color: rgb(var(--text));
+	font-size: 18px;
+	line-height: 32px;
+	margin: 0px;
+}
+
+p {
+	margin-bottom: 24px;
+}
+
+aside {
+	font-family: "HEX Franklin", -apple-system, serif;
+	font-weight: 400;
+	color: rgb(var(--aside));
+	font-size: 16px;
+	line-height: 24px;
+	padding: 24px;
+	margin-bottom: 40px;
+	background: rgba(var(--focus), .075);
+	border-radius: 16px;
+}
+
+/*em {
    font-family: "Capito Italic", -apple-system, serif;
    font-weight: normal;
    font-style: normal;
-}
+}*/
 
 blockquote {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 28px;
-	color: var(--text);
-	background: var(--highlight);
-	padding: 32px;
+	color: rgb(var(--focus));
+	border-left: 8px solid rgba(var(--highlight), .3);
+	padding-left: 32px;
 	margin: 32px;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	font-family: "Mint Grotesk", -apple-system, sans-serif;
+	color: rgb(var(--focus));
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 15px;
+	line-height: 20px;
 }
 
 a, a:visited {
 	color: var(--text);
-	text-decoration-color: var(--focus);
+	text-decoration-color: rgba(var(--focus), .5);
+	-webkit-text-decoration-skip-ink: skip;
 	text-decoration-skip-ink: all;
-	text-underline-offset: .2em;
-	text-decoration-thickness: auto;
+	text-underline-offset: .1em;
+	text-decoration-thickness: 4px;
 }
 
 a:hover {
 	text-decoration: none;
+	color: rgba(var(--focus), .75);
+}
+
+a.aside {
+	color: var(--aside);
+	text-decoration-color: var(--aside);
+	text-decoration-thickness: auto;
+}
+
+a.aside:hover {
 	color: var(--focus);
+	opacity: 100%;
+}
+
+/* Images */
+
+.placeholder {
+	height: 12rem;
+	background-color: rgba(var(--highlight), .2);
+	margin: 0;
+	width: 100%;
+	margin-top: 32px;
+	margin-bottom: 16px;
+	border-radius: 16px;
+}
+
+/*Resposive-bility*/
+
+@media only screen and (max-width: 568px), only screen and (max-device-width: 568px) {
+
+p, li {
+	font-size: 18px;
+	line-height: 28px;
+}
+
 }
