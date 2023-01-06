@@ -1,18 +1,11 @@
 /*Basics & Structure*/
 
 :root {
-	--dark: #040708;
-	--slate: #0F181F;
-	--gray: #7A8085;
-	--gray2: #535A5E;
-	--paper: #F8F6F5;
-	--moss: #34788E;
-	--yellow: #FFC400;
-	--purp: #7A00FF;
-	--red: #DE5636;
-	--brown: #AE6C37;
-	--pink: #FFBFE1;
-	--blue: #0E2ADF;
+	--bg: 15, 24, 31;
+	--aside: 122, 128, 133;
+	--text: 248, 246, 245;
+	--focus: 255, 196, 0;
+	--social: 255, 191, 225;
 }
 
 @keyframes rotation {
@@ -25,7 +18,7 @@
 }
 
 html {
-	background: var(--slate);
+	background: rgb(var(--bg));
 	text-rendering: optimizeLegibility;
 	  -webkit-font-smoothing: antialiased;
 	  -moz-font-smoothing: antialiased;
@@ -99,22 +92,16 @@ footer {
 }
 
 @font-face  {
-	font-family: Capito;
-	src: url("/fonts/Capito03-Regular.woff") format("woff");
-	font-weight: 400;
-}
-
-@font-face  {
-	font-family: Inter;
-	src: url("/fonts/Inter-Regular.woff") format("woff");
+	font-family: HEX Franklin;
+	src: url("/fonts/HEX_Franklin_v0.2-Regular.woff2") format("woff");
 	font-weight: 400;
 }
 
 /*Type & Link Styling*/
 
 ::selection {
-	background: var(--yellow);
-	color: var(--slate);
+	background: rgb(var(--focus));
+	color: rgb(var(--bg));
 }
 
 h1, h2 {
@@ -124,35 +111,35 @@ h1, h2 {
 }
 
 h1 {
-	font-weight: 400;
-	color: var(--yellow);
+	font-weight: 600;
+	color: rgb(var(--focus));
 	font-size: 24px;
 	line-height: 30px;
 }
 
 h2 {
 	font-weight: 600;
-	color: var(--paper);
+	color: rgb(var(--text));
 	font-size: 16px;
 }
 
 h2.copyright {
-	color: var(--gray);
+	color: rgb(var(--aside));
 }
 
 p {
-	font-family: "Capito", -apple-system, serif;
+	font-family: "HEX Franklin", -apple-system, serif;
 	font-weight: 400;
-	color: var(--paper);
+	color: rgb(var(--text));
 	font-size: 18px;
-	line-height: 28px;
+	line-height: 32px;
 	margin: 0px;
 	margin-bottom: 24px;
 }
 
 p.mention, p.social {
-	font-family: "Inter", -apple-system, sans-serif;
-	color: var(--gray);
+	font-family: "HEX Franklin", -apple-system, sans-serif;
+	color: rgb(var(--aside));
 	font-size: 16px;
 	line-height: 22px;
 	margin-bottom: 12px;
@@ -164,25 +151,27 @@ p.social {
 }
 
 a, a:visited {
-	color: var(--paper);
-	text-decoration-color: var(--yellow);
-	text-underline-offset: .2em;
+	color: rgb(var(--text));
+	text-decoration-color: rgba(var(--focus), 1);
 	text-decoration-skip-ink: all;
-	text-decoration-thickness: auto;
+	text-underline-offset: .2em;
+	text-decoration-thickness: 2px;
 }
 
 a.social {
-	color: var(--pink);
-	text-decoration-color: var(--pink);
+	color: rgb(var(--social));
+	text-decoration-color: rgb(var(--social));
+	text-decoration-thickness: auto;
 }
 
 a.foot {
-	color: var(--gray);
-	text-decoration-color: var(--gray);
+	color: rgb(var(--aside));
+	text-decoration-color: rgb(var(--aside));
+	text-decoration-thickness: auto;
 }
 
 a.foot:hover {
-	color: var(--paper);
+	color: rgb(var(--text));
 	opacity: 100%;
 }
 
@@ -206,6 +195,11 @@ header {
 
 section, header, footer, #face {
 	display: block;
+}
+
+p {
+	font-size: 18px;
+	line-height: 28px;
 }
 }
 
