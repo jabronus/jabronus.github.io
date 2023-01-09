@@ -42,7 +42,7 @@ header, section {
 	width: 56px;
 	height: 56px;
 	margin-right: 44px;
-	animation: rotation 12s infinite linear;
+	animation: rotation 20s infinite linear;
 }
 
 section, header, footer, #face {
