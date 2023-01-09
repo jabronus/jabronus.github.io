@@ -9,9 +9,18 @@ body {
 	font-size: large;
 	max-width: 720px;
 	margin: auto;
-	padding: 24px;
+	padding: 1.5em;
+}
+
+nav::before {
+	content: '\1F519';
+	padding-right: .5em;
+}
+
+nav {
+	margin-top: 2em;
 }
 
 article {
-	margin-top: 64px
+	margin-top: 3em;
 }
