@@ -2,12 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
 	<atom:link href="http://noahjacob.us/feed.xml" rel="self" type="application/rss+xml" />
-	<title>Noah Jacobus: Icon Sommelier</title>
+	<title>Small Yay</title>
 	<link>http://noahjacob.us</link>
 	<description>Mind grapes and tiny pictures</description>
 	<language>en-us</language>
 	<item>
 	  <title>Writing in the Open</title>
+	  <author>Noah Jacobus</author>
 	  <pubDate>Tue, 10 Jan 2023 16:00:00 GMT</pubDate>
 	  <link>http://noahjacob.us/words/writing-in-the-open.html</link>
 	  <guid>http://noahjacob.us/words/note001</guid>
