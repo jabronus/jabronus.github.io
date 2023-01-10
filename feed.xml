@@ -8,10 +8,13 @@
 	<language>en-us</language>
 	<item>
 	  <title>Writing in the Open</title>
-	  <pubDate>Tue, 10 Jan 2023</pubDate>
+	  <author>Noah Jacobus</author>
+	  <pubDate>Tue, 10 Jan 2023 16:00:00 GMT</pubDate>
 	  <link>http://noahjacob.us/words/writing-in-the-open.html</link>
 	  <guid>http://noahjacob.us/words/note001</guid>
-	  <description>The one where things get started</description>
+	  <description>
+	  	<![CDATA[ <p>Well hello there, new friend. This blog may not look like much yet, but I wanted to get a space set up sooner rather than later for my forthcoming thoughts. And while the paint may change, the bones will stay the same—so why not go ahead and move in?</p> <p>Some potential posts coming down the pipe:</p> <ul> <li><strong>“Job Awesome”</strong> (reflections on one year at <a href="https://fontawesome.com" target="_blank">Font Awesome</a>)</li> <li><strong>“Fundamentals of Icon Design v2”</strong> (cleaned-up writing, new visual examples, dropping the MetaLab project narrative framing)</li> <li><strong>“Clicksy Business”</strong> (getting into the mechanical keyboard hobby)</li> <li><strong>“We Got the Chunk”</strong> (the ups, downs, and more ups of making and maintaining <a href="http://chunkicons.com" target="_blank">Chunk icons</a>)</li> </ul> <p>Anything else you’d like to hear about? Gimme a hearty shout on <a href="https://twitter.com/Jabronus" target="_blank">The Bird</a> or <a href="https://mstdn.social/@jabronus" target="_blank">The Elephant</a>. </p> ]]>
+	  </description>
 	</item>
   </channel>
 </rss>
