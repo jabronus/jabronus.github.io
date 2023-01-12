@@ -260,6 +260,10 @@ p, ul, ol {
 footer p {
 	font-size: 14px;
 }
+
+ul.roundup {
+	padding-left: 1em;
+}
 }
 
 /*Paint It Black*/
