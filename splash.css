@@ -95,7 +95,6 @@ section, footer {
 
 section, header, footer, #face {
 	display: flex;
-
 }
 
 footer {
@@ -121,7 +120,7 @@ footer {
 .icon {
 	margin-right: 16px;
 	position: relative;
-	top: 2px;
+	top: 1px;
 }
 
 /*Type & Link Styling*/

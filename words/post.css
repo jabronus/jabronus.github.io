@@ -96,11 +96,12 @@ footer {
 .listing-post {
 	display: flex;
 	align-items: baseline;
-	gap: 92px;
+	justify-content: space-between;
+	gap: 32px;
 }
 
 .excerpt {
-	max-width: 528px;
+	flex-basis: 528px;
 	border-bottom: 2px solid rgb(var(--ink), .3);
 	padding-bottom: 2em;
 }
@@ -231,7 +232,6 @@ body {
 	display: block;
 }
 
-
 .listing-post time {
 	margin-bottom: 1em;
 }
@@ -241,7 +241,7 @@ body {
 }
 
 header {
-	margin-top: 0px;
+	margin-top: 16px;
 }
 
 h1 {
