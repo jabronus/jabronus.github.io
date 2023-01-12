@@ -69,13 +69,10 @@ body {
 	padding: 1.5em;
 }
 
-header {
-	margin-top: 48px;
-}
-
 nav {
 	display: flex;
 	gap: 1.5em;
+	margin-top: 48px;
 	font-family: var(--sans);
 	font-weight: 400;
 }
@@ -240,7 +237,7 @@ body {
 	padding-bottom: 1em;
 }
 
-header {
+nav {
 	margin-top: 16px;
 }
 
