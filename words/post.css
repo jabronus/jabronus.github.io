@@ -1,0 +1,262 @@
+/*Load Those WOFFs, Baybee*/
+
+@font-face  {
+	font-family: HEX Franklin;
+	src: url("/fonts/HEX_Franklin_v0.2-Regular.woff2") format("woff");
+	font-weight: 400;
+}
+
+@font-face  {
+	font-family: HEX Franklin;
+	src: url("/fonts/HEX_Franklin_v0.2-Semibold.woff2") format("woff");
+	font-weight: 600;
+}
+
+@font-face  {
+	font-family: HEX Franklin;
+	src: url("/fonts/HEX_Franklin_v0.2-Bold.woff2") format("woff");
+	font-weight: 700;
+}
+
+@font-face  {
+	font-family: Blanco;
+	src: url("Blanco-Regular.woff2") format("woff");
+	font-weight: 400;
+}
+
+@font-face  {
+	font-family: Blanco;
+	src: url("Blanco-Bold.woff2") format("woff");
+	font-weight: 600;
+}
+
+@font-face  {
+	font-family: Blanco Italic;
+	src: url("Blanco-Italic.woff2") format("woff");
+	font-weight: 400;
+}
+
+/*Building Blocks*/
+
+* {
+  margin: 0; /*Removes default margins across the board*/
+}
+
+:root {
+	--bg: 252, 248, 245;
+	--ink: 35, 39, 43;
+	--highlight: 255, 196, 0;
+	--accent: 255, 191, 225;
+	--serif: "Blanco", ui-serif, "Georgia", serif;
+	--serif-italic: "Blanco Italic", ui-serif, "Georgia", serif;
+	--sans: "HEX Franklin", system-ui, "Arial";
+}
+
+html {
+	background: rgb(var(--bg));
+	text-rendering: optimizeLegibility;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-font-smoothing: antialiased;
+  }
+
+body {
+	font-size: 20px;
+	font-family: var(--serif);
+	font-weight: normal;
+	max-width: 720px;
+	color: rgb(var(--ink));
+	margin: auto;
+	padding: 1.5em;
+}
+
+header {
+	margin-top: 48px;
+}
+
+nav {
+	display: flex;
+	gap: 1.5em;
+	font-family: var(--sans);
+	font-weight: 400;
+}
+
+article {
+	margin-top: 48px;
+}
+
+footer {
+	font-family: var(--sans);
+	font-size: 14px;
+	color: rgba(var(--ink), .6);
+	margin-top: 64px;
+}
+
+/*Blog post list index specific stuff*/
+
+.listing-post {
+	display: flex;
+	align-items: baseline;
+	gap: 92px;
+}
+
+.excerpt {
+	max-width: 528px;
+	border-bottom: 2px solid rgb(var(--ink), .3);
+	padding-bottom: 2em;
+}
+
+/*Type & Link Styling*/
+
+time {
+	font-size: 16px;
+	display: inline-block;
+	font-family: var(--sans);
+	color: rgba(var(--ink), .6);
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+h1 {
+	font-size: 32px;
+	font-family: var(--sans);
+}
+
+h2 {
+	font-size: 24px;
+	font-family: var(--sans);
+	font-weight: 600;
+	margin-bottom: .5em;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 20px;
+	margin-top: 2.5em;
+	margin-bottom: .5em;
+}
+
+p, ul, ol {
+	line-height: calc(1em + 0.5rem);
+	margin-bottom: 1em;
+}
+
+p.tbd {
+	opacity: .3;
+}
+
+em {
+   font-family: var(--serif-italic);
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: rgb(var(--ink));
+	box-shadow: inset 0 -.45em 0 rgb(var(--highlight), .6);
+}
+
+a:hover {
+	box-shadow:inset 0 -1em 0 rgb(var(--highlight), 1);
+	transition: 300ms;
+	-moz-transition: 300ms; /* Firefox */
+	-webkit-transition: 300ms; /*safari and chrome */
+}
+
+/*Roundup Item Types for Lists*/
+
+ul.roundup {
+	list-style: none;
+	padding-left: 48px;
+	margin: 0;
+}
+
+h3 a {
+	box-shadow: inset 0 -.45em 0 rgb(var(--accent), .8);
+}
+
+h3 a:hover {
+	box-shadow:inset 0 -1em 0 rgb(var(--accent), 1);
+	transition: 300ms;
+	-moz-transition: 300ms; /* Firefox */
+	-webkit-transition: 300ms; /*safari and chrome */
+}
+
+.roundup p, h3 {
+	padding-left: 24px;
+}
+
+.book {
+	list-style-type: "📖";
+}
+
+.music {
+	list-style-type: "🎵";
+}
+
+.tv {
+	list-style-type: "📺️";
+}
+
+.podcast {
+	list-style-type: "🔉";
+}
+
+.video-game {
+	list-style-type: "🎮️";
+}
+
+.tabletop {
+	list-style-type: "🎲";
+}
+
+.keyboard {
+	list-style-type: "⌨️";
+}
+
+/*Imagery*/
+
+img, picture, video, canvas, figure {
+  display: block;
+  max-width: 100%;
+}
+
+/*Resposive-bility*/
+
+@media only screen and (max-width: 568px), only screen and (max-device-width: 568px) {
+
+body {
+	padding: 1em;
+}
+
+.listing-post {
+	display: block;
+}
+
+
+.listing-post time {
+	margin-bottom: 1em;
+}
+
+.excerpt {
+	padding-bottom: 1em;
+}
+
+header {
+	margin-top: 0px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+p, ul, ol {
+	font-size: 18px;
+}
+
+footer p {
+	font-size: 14px;
+}
+}
