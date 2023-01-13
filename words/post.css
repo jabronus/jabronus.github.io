@@ -278,6 +278,10 @@ h2 {
 p, ul, ol {
 	font-size: 18px;
 }
+	
+.reply {
+	font-size: 15px;
+}
 
 footer p {
 	font-size: 14px;
