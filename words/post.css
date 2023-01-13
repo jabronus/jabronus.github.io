@@ -27,13 +27,19 @@
 @font-face  {
 	font-family: Blanco;
 	src: url("/fonts/Blanco-Bold.woff2") format("woff");
-	font-weight: 600;
+	font-weight: 700;
 }
 
 @font-face  {
 	font-family: Blanco Italic;
 	src: url("/fonts/Blanco-Italic.woff2") format("woff");
 	font-weight: 400;
+}
+
+@font-face  {
+	font-family: Blanco Italic;
+	src: url("/fonts/Blanco-BoldItalic.woff2") format("woff");
+	font-weight: 700;
 }
 
 /*Building Blocks*/
@@ -131,7 +137,7 @@ h2 {
 }
 
 h3 {
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 20px;
 	margin-top: 2.5em;
 	margin-bottom: .5em;
