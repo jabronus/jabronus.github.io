@@ -20,19 +20,19 @@
 
 @font-face  {
 	font-family: Blanco;
-	src: url("Blanco-Regular.woff2") format("woff");
+	src: url("/fonts/Blanco-Regular.woff2") format("woff");
 	font-weight: 400;
 }
 
 @font-face  {
 	font-family: Blanco;
-	src: url("Blanco-Bold.woff2") format("woff");
+	src: url("/fonts/Blanco-Bold.woff2") format("woff");
 	font-weight: 600;
 }
 
 @font-face  {
 	font-family: Blanco Italic;
-	src: url("Blanco-Italic.woff2") format("woff");
+	src: url("/fonts/Blanco-Italic.woff2") format("woff");
 	font-weight: 400;
 }
 
