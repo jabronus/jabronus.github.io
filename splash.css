@@ -177,6 +177,11 @@ p.social {
 	margin-right: 32px;
 }
 
+em {
+	font-style: normal;
+	font-family: var(--serif-italic);
+}
+
 a, a:visited {
 	text-decoration: none;
 	color: rgb(var(--text));

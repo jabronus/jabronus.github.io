@@ -147,7 +147,8 @@ p.tbd {
 }
 
 em {
-   font-family: var(--serif-italic);
+	font-style: normal;
+	font-family: var(--serif-italic);
 }
 
 a, a:visited {
