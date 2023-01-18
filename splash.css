@@ -1,52 +1,9 @@
-/*Load Those WOFFs, Baybee*/
-
-@font-face  {
-	font-family: HEX Franklin;
-	src: url("/fonts/HEX_Franklin_v0.2-Regular.woff2") format("woff");
-	font-weight: 400;
-}
-
-@font-face  {
-	font-family: HEX Franklin;
-	src: url("/fonts/HEX_Franklin_v0.2-Semibold.woff2") format("woff");
-	font-weight: 600;
-}
-
-@font-face  {
-	font-family: HEX Franklin;
-	src: url("/fonts/HEX_Franklin_v0.2-Bold.woff2") format("woff");
-	font-weight: 700;
-}
-
-@font-face  {
-	font-family: HEX Franklin Narrow;
-	src: url("/fonts/HEX_Franklin_v0.2_Narrow-Medium.woff2") format("woff");
-	font-weight: 500;
-}
-
-@font-face  {
-	font-family: Blanco;
-	src: url("/fonts/Blanco-Regular.woff2") format("woff");
-	font-weight: 400;
-}
-
-@font-face  {
-	font-family: Blanco Italic;
-	src: url("/fonts/Blanco-Italic.woff2") format("woff");
-	font-weight: 400;
-}
-
 /*Building Blocks*/
 
 :root {
-	--bg: 15, 24, 31;
+	--dark-bg: 15, 24, 31;
 	--aside: 122, 128, 133;
-	--text: 252, 248, 245;
-	--focus: 255, 196, 0;
 	--social: 255, 191, 225;
-	--serif: "Blanco", ui-serif, "Georgia", serif;
-	--serif-italic: "Blanco Italic", ui-serif, "Georgia", serif;
-	--sans: "HEX Franklin", system-ui, "Arial";
 }
 
 @keyframes rotation {
@@ -59,7 +16,7 @@
 }
 
 html {
-	background: rgb(var(--bg));
+	background: rgb(var(--dark-bg));
 	text-rendering: optimizeLegibility;
 	  -webkit-font-smoothing: antialiased;
 	  -moz-font-smoothing: antialiased;
@@ -68,17 +25,17 @@ html {
 body {
 	max-width: 720px;
 	margin: auto;
-	padding: 32px;
+	padding: var(--medium);
 }
 
 header {
-	margin-top: 48px;
+	margin-top: var(--large);
 	align-items: flex-start;
 	gap: 92px;
 }
 
 header, section {
-	margin-bottom: 64px;
+	margin-bottom: var(--venti);
 }
 
 section, footer {
@@ -98,7 +55,7 @@ section, header, footer, #face {
 }
 
 footer {
-	margin-bottom: 64px;
+	margin-bottom: var(--large);
 }
 
 .label {
@@ -118,7 +75,7 @@ footer {
 /*Images & Icons*/
 
 .icon {
-	margin-right: 16px;
+	margin-right: var(--small);
 	position: relative;
 	top: 1px;
 }
@@ -126,19 +83,19 @@ footer {
 /*Type & Link Styling*/
 
 ::selection {
-	background: rgb(var(--focus));
-	color: rgb(var(--bg));
+	background: rgb(var(--highlight));
+	color: rgb(var(--text));
 }
 
 h1, h2 {
 	font-family: var(--sans);
 	margin: 0px;
-	margin-bottom: 16px;
+	margin-bottom: var(--small);
 }
 
 h1 {
 	font-weight: 500;
-	color: rgb(var(--focus));
+	color: rgb(var(--highlight));
 	font-size: 24px;
 	line-height: 30px;
 }
@@ -146,18 +103,18 @@ h1 {
 h2 {
 	font-family: "HEX Franklin Narrow";
 	font-weight: 500;
-	color: rgb(var(--text));
+	color: rgb(var(--bg));
 	font-size: 24px;
 }
 
 h2.copyright {
-	color: rgb(var(--aside));
+	color: rgba(var(--bg), .6);
 }
 
 p {
 	font-family: var(--serif);
 	font-weight: 400;
-	color: rgb(var(--text));
+	color: rgb(var(--bg));
 	font-size: 20px;
 	line-height: 32px;
 	margin: 0px;
@@ -165,8 +122,8 @@ p {
 }
 
 p.mention, p.social {
-	font-family: "HEX Franklin", -apple-system, sans-serif;
-	color: rgb(var(--aside));
+	font-family: var(--sans);
+	color: rgba(var(--bg), .6);
 	font-size: 16px;
 	line-height: 22px;
 	margin-bottom: 12px;
@@ -184,13 +141,13 @@ em {
 
 a, a:visited {
 	text-decoration: none;
-	color: rgb(var(--text));
-	box-shadow: inset 0 -.45em 0 rgb(var(--focus), .4);
+	color: rgb(var(--bg));
+	box-shadow: inset 0 -.45em 0 rgb(var(--highlight), .4);
 }
 
 a:hover {
-	color: rgb(var(--bg));
-	box-shadow: inset 0 -1em 0 rgb(var(--focus), 1);
+	color: rgb(var(--dark-bg));
+	box-shadow: inset 0 -1em 0 rgb(var(--highlight), 1);
 	transition: 300ms;
 	-moz-transition: 300ms; /* Firefox */
 	-webkit-transition: 300ms; /*safari and chrome */
@@ -199,7 +156,7 @@ a:hover {
 a.foot {
 	box-shadow: none;
 	text-decoration: underline;
-	color: rgb(var(--aside));
+	color: rgba(var(--bg), .6);
 	text-decoration-skip-ink: all;
 	text-decoration-color: rgb(var(--aside));
 	text-underline-offset: .2em;
@@ -207,16 +164,12 @@ a.foot {
 }
 
 a.foot:hover {
-	color: rgb(var(--text));
+	text-decoration: none;
+	color: rgba(var(--bg), 1);
 	opacity: 100%;
 	transition: 300ms;
 	-moz-transition: 300ms; /* Firefox */
 	-webkit-transition: 300ms; /*safari and chrome */
-}
-
-a:hover {
-	text-decoration: none;
-	opacity: 75%;
 }
 
 /*Resposive-bility*/
