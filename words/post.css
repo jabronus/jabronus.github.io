@@ -39,8 +39,11 @@ article {
 	margin-top: var(--large);
 }
 
-section {
-	margin-bottom: var(--large);
+hr {
+	margin-bottom: var(--medium);
+	border: none;
+	height: 2px;
+	background-color: rgba(var(--text), .2);
 }
 
 .reply {
