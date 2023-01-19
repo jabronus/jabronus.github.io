@@ -48,12 +48,8 @@ hr {
 
 .reply {
 	font-size: 16px;
-	line-height: calc(1em + 0.5rem);
 	display: block;
 	font-family: var(--sans);
-	color: rgba(var(--text), .8);
-	padding: 1em;
-	background-color: rgba(var(--text), .05);
 	margin-top: var(--venti);
 }
 
@@ -163,7 +159,7 @@ aside {
 	line-height: calc(1em + 0.5rem);
 	color: rgba(var(--text), .8);
 	padding: 1em;
-	background-color: rgba(var(--text), .05);
+	background-color: rgba(var(--text), .09);
 }
 
 /*Roundup Item Types for Lists*/
