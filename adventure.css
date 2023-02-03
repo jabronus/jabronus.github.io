@@ -1,0 +1,127 @@
+@font-face  {
+	font-family: Inter;
+	src: url("/fonts/Inter-Regular.woff2") format("woff");
+	font-weight: 400;
+}
+
+@font-face  {
+	font-family: Inter Italic;
+	src: url("/fonts/Inter-Italic.woff2") format("woff");
+	font-weight: 400;
+}
+
+@font-face  {
+	font-family: Musikal;
+	src: url("/fonts/Musikal-Medium_v0.1.woff2") format("woff");
+	font-weight: 500;
+}
+
+/*Variables*/
+
+:root {
+	--fancy: "Musikal";
+	--sans: "Inter", system-ui, "Arial";
+	--sans-italic: "Inter Italic", system-ui, "Arial";
+	--bg: 255, 241, 232;
+	--text: 33, 22, 64;
+}
+
+/*Building Blocks*/
+
+* {
+  margin: 0; /*Removes default margins across the board*/
+}
+
+html {
+	background-color: rgb(var(--bg));
+	color: rgb(var(--text));
+	text-rendering: optimizeLegibility;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-font-smoothing: antialiased;
+	font-size: 18px;
+	font-family: var(--sans);
+	font-weight: normal;
+	line-height: calc(1em + 0.5rem);
+}
+
+body {
+	line-height: 1.6em;
+	padding: 1.5em;
+	padding-top: 96px;
+	max-width: 680px;
+	margin: auto;
+}
+
+/*Type & Link Styling*/
+
+h1 {
+	font-family: var(--fancy);
+	margin-bottom: 8px;
+	line-height: 1.3em;
+}
+
+time {
+	font-size: 18px;
+	display: inline-block;
+	color: rgba(var(--text), .6);
+	margin-bottom: 48px;
+}
+
+p, ol, ul {
+	margin-bottom: 24px;
+}
+
+ul li::marker, ol li::marker {
+  color: rgba(var(--text), .3);
+}
+
+a {
+	display: inline-block;
+	color: rgb(var(--text));
+	text-decoration: none;
+	padding: 0 .25em 0 .25em;
+	background-color: rgb(252, 216, 132);
+	border-radius: 8px;
+	transition: 300ms;
+	-moz-transition: 300ms; /* Firefox */
+	-webkit-transition: 300ms; /*safari and chrome */
+}
+
+a:hover {
+	scale: 105%;
+	color: rgb(var(--text));
+	background-color: rgb(252, 184, 0);
+	box-shadow: 0 .5em 2em rgba(172, 128, 0, .5);
+	transition: 300ms;
+	-moz-transition: 300ms; /* Firefox */
+	-webkit-transition: 300ms; /*safari and chrome */
+}
+
+a:active {
+
+}
+
+em {
+	font-style: normal; /* removes the fake italicizing */
+	font-family: var(--sans-italic);
+}
+
+/*Paint It Black*/
+
+@media (prefers-color-scheme: dark) {
+:root {
+	--text: 255, 241, 232;
+	--bg: 33, 22, 64;
+}
+
+a {
+	color: rgb(var(--text));
+	background-color: rgb(90, 25, 145);
+}
+
+a:hover {
+	background-color: rgb(var(--text), 1);
+	color: rgb(var(--bg));
+	box-shadow: 0 .5em 2em rgba(0,0,0, .5);
+}
+}

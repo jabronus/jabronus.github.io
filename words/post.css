@@ -113,7 +113,7 @@ h3 {
 	margin-bottom: var(--small);
 }
 
-p, ul, ol, blockquote, aside {
+p, blockquote, aside {
 	margin-bottom: var(--medium);
 	line-height: calc(1em + 0.5rem);
 }
@@ -131,6 +131,9 @@ a, a:visited {
 	text-decoration: none;
 	color: rgb(var(--text));
 	box-shadow: inset 0 -.45em 0 rgb(var(--highlight), .6);
+	transition: 300ms;
+	-moz-transition: 300ms; /* Firefox */
+	-webkit-transition: 300ms; /*safari and chrome */
 }
 
 a:hover {
@@ -146,6 +149,10 @@ ul li::marker, ol li::marker {
 
 ul {
 	list-style-type: circle;
+}
+
+li p {
+	margin-bottom: var(--small);
 }
 
 blockquote {
@@ -169,19 +176,13 @@ ul.roundup {
 	margin: 0;
 }
 
-h3 a {
-	box-shadow: inset 0 -.45em 0 rgb(var(--accent), .8);
-}
-
-h3 a:hover {
-	box-shadow:inset 0 -1em 0 rgb(var(--accent), 1);
-	transition: 300ms;
-	-moz-transition: 300ms; /* Firefox */
-	-webkit-transition: 300ms; /*safari and chrome */
-}
-
-.roundup p, .roundup h3 {
+.roundup p, .roundup h3, .roundup figure {
 	padding-left: 24px;
+}
+
+.roundup blockquote {
+	margin-left: 24px;
+	margin-bottom: var(--small);
 }
 
 .book {
@@ -210,6 +211,10 @@ h3 a:hover {
 
 .keyboard {
 	list-style-type: "⌨️";
+}
+
+.website {
+	list-style-type: "🌐";
 }
 
 /*Imagery*/
