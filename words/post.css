@@ -113,7 +113,7 @@ h3 {
 	margin-bottom: var(--small);
 }
 
-p, blockquote, aside {
+p, ol, ul, blockquote, aside {
 	margin-bottom: var(--medium);
 	line-height: calc(1em + 0.5rem);
 }
