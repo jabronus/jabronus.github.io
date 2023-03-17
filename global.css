@@ -8,75 +8,70 @@ website: 	http://noahjacob.us
 /*Load Those WOFFs, Baybee*/
 
 @font-face  {
-	font-family: HEX Franklin;
-	src: url("/fonts/HEX_Franklin_v0.2-Regular.woff2") format("woff");
+	font-family: IBM Plex Sans;
+	src: url("/fonts/IBMPlexSans-Regular.woff2") format("woff");
 	font-weight: 400;
 }
 
 @font-face  {
-	font-family: HEX Franklin;
-	src: url("/fonts/HEX_Franklin_v0.2-Semibold.woff2") format("woff");
-	font-weight: 600;
-}
-
-@font-face  {
-	font-family: HEX Franklin;
-	src: url("/fonts/HEX_Franklin_v0.2-Bold.woff2") format("woff");
+	font-family: IBM Plex Sans;
+	src: url("/fonts/IBMPlexSans-Bold.woff2") format("woff");
 	font-weight: 700;
 }
 
 @font-face  {
-	font-family: HEX Franklin Narrow;
-	src: url("/fonts/HEX_Franklin_v0.2_Narrow-Medium.woff2") format("woff");
-	font-weight: 500;
-}
-
-@font-face  {
-	font-family: Blanco;
-	src: url("/fonts/Blanco-Regular.woff2") format("woff");
+	font-family: IBM Plex Sans Italic;
+	src: url("/fonts/IBMPlexSans-Italic.woff2") format("woff");
 	font-weight: 400;
 }
 
 @font-face  {
-	font-family: Blanco;
-	src: url("/fonts/Blanco-Bold.woff2") format("woff");
+	font-family: IBM Plex Sans Italic;
+	src: url("/fonts/IBMPlexSans-BoldItalic.woff2") format("woff");
 	font-weight: 700;
 }
 
 @font-face  {
-	font-family: Blanco Italic;
-	src: url("/fonts/Blanco-Italic.woff2") format("woff");
-	font-weight: 400;
+	font-family: Mint Grotesk;
+	src: url("/fonts/Mint-Grotesk-Bold-V131.woff2") format("woff");
+	font-weight: 700;
 }
 
 @font-face  {
-	font-family: Blanco Italic;
-	src: url("/fonts/Blanco-BoldItalic.woff2") format("woff");
+	font-family: Mint Grotesk Italic;
+	src: url("/fonts/Mint-Grotesk-BoldItalic-V131.woff2") format("woff");
 	font-weight: 700;
+}
+
+@font-face  {
+	font-family: Mint Grotesk;
+	src: url("/fonts/Mint-Grotesk-Heavy-V131.woff2") format("woff");
+	font-weight: 900;
 }
 
 /* Fonts */
 
 :root {
-	--serif: "Blanco", ui-serif, "Georgia", serif;
-	--serif-italic: "Blanco Italic", ui-serif, "Georgia", serif;
-	--sans: "HEX Franklin", system-ui, "Arial";
+	--sans: "IBM Plex Sans", system-ui, "Arial", sans-serif;
+	--sans-italic: "IBM Plex Sans Italic", system-ui, "Arial", sans-serif;
+	--title: "Mint Grotesk", system-ui, "Arial";
+	--title-talic: "Mint Grotesk", system-ui, "Arial";
 }
 
 /* Colors */
 
 :root {
-	--bg: 252, 248, 245; /*Paper*/
-	--text: 35, 39, 43; /*Slate*/
-	--highlight: 255, 196, 0; /*Yellow*/
-	--accent: 255, 191, 225; /*Pink*/
+	--bg: 249, 240, 219; /*Paper*/
+	--text: 32, 31, 37; /*Slate*/
+	--highlight: 255, 187, 4; /*Yellow*/
+	--accent: 255, 154, 186; /*Pink*/
 }
 
 /* Spacing */
 
 :root {
-	--small: 16px;
-	--medium: 32px;
-	--large: 48px;
-	--venti: 64px;
+	--small: 1em;
+	--medium: 2em;
+	--large: 3em;
+	--venti: 4em;
 }

@@ -1,0 +1,237 @@
+/*Roundup Item Types for Lists*/
+
+.roundup {
+	margin-top: var(--large);
+	line-height: 1.5em;
+	list-style-type: none;
+	font-size: 16px;
+}
+
+.roundup p {
+	margin-bottom: 1em;
+	position: relative;
+}
+
+.roundup-title {
+	display: inline-block;
+}
+
+.roundup p:last-of-type {
+	margin-bottom: 0;
+}
+
+.roundup a, .roundup figcaption {
+	color: inherit;
+	margin-bottom: var(--small)
+}
+
+.roundup a:hover {
+	color: rgb(var(--text));
+	text-decoration: none;
+}
+
+.roundup img {
+	margin-top: var(--medium);
+	box-shadow: none;
+}
+
+.roundup li {
+	padding: 12px;
+	border-radius: 16px;
+	margin-bottom: 24px;
+	
+}
+
+.roundup blockquote {
+	font-size: 14px;
+	line-height: 1.5em;
+	font-family: var(--sans-italic);
+	margin-bottom: 16px;
+}
+
+.book {
+	color: rgb(0 0 252);
+	border: rgba(0, 120, 252, .2) solid 1.5px;
+	background-color: rgba(164, 232, 252, .2);
+	box-shadow: 0 4px 8px rgba(0, 120, 252, .1);
+}
+
+.book::before {
+	content: '📖 ';
+	position: inline-block;
+}
+
+.book a {
+	text-decoration-color: rgba(0, 0, 252, .3);
+}
+
+.music {
+	color: rgb(148 0 140);
+	border: rgba(220, 0, 212, .2) solid 1.5px;
+	background-color: rgba(252, 184, 252, .2);
+	box-shadow: 0 4px 8px rgba(220, 0, 212, .1);
+}
+
+.music::before {
+	content: '🎵 ';
+	position: inline-block;
+}
+
+.music a {
+	text-decoration-color: rgba(148, 0, 140, .3);
+}
+
+.tv {
+	color: rgb(80 48 0);
+	border: rgba(172, 128, 0, .2) solid 1.5px;
+	background-color: rgba(252, 216, 132, .2);
+	box-shadow: 0 4px 8px rgba(172, 128, 0, .1);
+}
+
+.tv::before {
+	content: '📺 ';
+	position: inline-block;
+}
+
+.tv a {
+	text-decoration-color: rgba(80, 48, 0, .3);
+}
+
+.podcast {
+
+}
+
+.podcast::before {
+	content: '🎧 ';
+	position: inline-block;
+}
+
+.video-game {
+
+}
+
+.video-game::before {
+	content: '🎮 ';
+	position: inline-block;
+}
+
+.tabletop {
+
+}
+
+.tabletop::before {
+	content: '🎲 ';
+	position: inline-block;
+}
+
+.keyboard {
+	color: rgb(172 16 0);
+	border: rgba(252, 56, 0, .2) solid 1.5px;
+	background-color: rgba(244, 208, 180, .2);
+	box-shadow: 0 4px 8px rgba(252, 56, 0, .1);
+}
+
+.keyboard::before {
+	content: '⌨️ ';
+	position: inline-block;
+}
+
+.keyboard a {
+	text-decoration-color: rgba(172, 16, 0, .3);
+}
+
+.website {
+	color: rgb(0 120 0);
+	border: rgba(0, 184, 0, .2) solid 1.5px;
+	background-color: rgba(220, 248, 120, .2);
+	box-shadow: 0 4px 8px rgba(0, 184, 0, .1);
+}
+
+.website::before {
+	content: '🌐 ';
+	position: inline-block;
+}
+
+.website a {
+	text-decoration-color: rgba(0, 120, 0, .3);
+}
+
+/*Paint It Black*/
+
+@media (prefers-color-scheme: light) {
+:root {
+	--highlight: 122, 0, 255; /* use blue instead of yellow in light mode for contrast */
+}
+}
+
+/*Paint It Black*/
+
+@media (prefers-color-scheme: dark) {
+
+.book {
+	color: rgb(164, 232, 252);
+	border: rgba(0, 120, 252, .5) solid 1.5px;
+	background-color: rgba(164, 232, 252, .2);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.book a {
+	text-decoration-color: rgba(164, 232, 252, .3);
+}
+
+.music {
+	color: rgb(252, 184, 252);
+	border: rgba(220, 0, 212, .5) solid 1.5px;
+	background-color: rgba(252, 184, 252, .2);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.music a {
+	text-decoration-color: rgba(252, 184, 252, .3);
+}
+
+.tv {
+	color: rgb(252 216 132);
+	border: rgba(172, 128, 0, .5) solid 1.5px;
+	background-color: rgba(252, 216, 132, .2);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.tv a {
+	text-decoration-color: rgba(252, 216, 132, .3);
+}
+
+.podcast {
+
+}
+
+.video-game {
+
+}
+
+.tabletop {
+
+}
+
+.keyboard {
+	color: rgb(244 208 180);
+	border: rgba(252, 56, 0, .5) solid 1.5px;
+	background-color: rgba(244, 208, 180, .2);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.keyboard a {
+	text-decoration-color: rgba(244, 208, 180, .3);
+}
+
+.website {
+	color: rgb(220 248 120);
+	border: rgba(0, 184, 0, .5) solid 1.5px;
+	background-color: rgba(220, 248, 120, .2);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.website a {
+	text-decoration-color: rgba(220, 248, 120, .3);
+}
+}
