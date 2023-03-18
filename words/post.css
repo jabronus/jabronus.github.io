@@ -236,6 +236,10 @@ blockquote {
 	margin-top: var(--medium);
 }
 
+aside {
+	font-size: smaller;
+}
+
 /*Imagery*/
 
 img, picture, video, canvas {
