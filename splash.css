@@ -252,6 +252,10 @@ body {
 	font-size: 16px;
 }
 
+hr {
+	margin-bottom: var(--small);
+}
+
 h1 {
 	font-size: 32px;
 }
