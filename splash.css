@@ -198,7 +198,7 @@ a:hover {
 	-webkit-transition: 300ms; /*safari and chrome */
 }
 
-h3 a {
+h3 a, h3 a:visited {
 	color: rgb(var(--highlight));
 	text-decoration-color: rgba(var(--highlight), .3);
 }
@@ -248,9 +248,7 @@ h3 {
 
 @media only screen and (max-width: 360px), only screen and (max-device-width: 360px) {
 	
-body {
-	font-size: 16px;
-}
+
 
 hr {
 	margin-bottom: var(--small);
