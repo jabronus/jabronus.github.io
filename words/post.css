@@ -303,7 +303,7 @@ h1 {
 
 @media (prefers-color-scheme: light) {
 :root {
-	--highlight: 122, 0, 255; /* use blue instead of yellow in light mode for contrast */
+	--highlight: 122, 0, 255; /* use purple instead of yellow in light mode for contrast */
 }
 }
 
@@ -315,6 +315,11 @@ h1 {
 
 ::selection {
 	color: rgb(var(--bg));
+}
+	
+nav a {
+	color: rgb(32, 31, 37);
+	text-decoration-color: rgba(32, 31, 37, .3);
 }
 
 nav a:hover {
