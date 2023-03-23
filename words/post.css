@@ -46,16 +46,6 @@ nav {
 	box-shadow: 0 8px 24px rgba(172, 128, 0, .3);
 }
 
-nav a {
-	color: rgb(32, 31, 37);
-	text-decoration-color: rgba(32, 31, 37, .3);
-}
-
-nav a:hover {
-	color: rgba(var(--text), 1);
-	text-decoration-color: rgba(32, 31, 37, .9);
-}
-
 .breadcrumb {
 	color: rgba(32, 31, 37, .5);
 	text-decoration-color: rgba(32, 31, 37, .2);
@@ -196,6 +186,16 @@ a:hover {
 	-webkit-transition: 300ms; /*safari and chrome */
 }
 
+nav a {
+	color: rgb(32, 31, 37);
+	text-decoration-color: rgba(32, 31, 37, .3);
+}
+
+nav a:hover {
+	color: rgb(32, 31, 37);
+	text-decoration-color: rgba(32, 31, 37, .9);
+}
+
 h2 a:hover {
 	color: rgb(var(--highlight));
 	text-decoration-color: rgba(var(--highlight), .4);
@@ -310,23 +310,14 @@ h1 {
 @media (prefers-color-scheme: dark) {
 :root {
 	--bg: 32, 31, 37;
-	--text: 249, 240, 219;
+	--text: 242, 240, 234;
 }
 
 ::selection {
 	color: rgb(var(--bg));
 }
-	
-nav a {
-	color: rgb(32, 31, 37);
-	text-decoration-color: rgba(32, 31, 37, .3);
-}
 
-nav a:hover {
-	color: rgb(var(--bg));
-}
-
-img, picture, video, canvas {
+img, picture, video, canvas, nav {
 	box-shadow: 0 8px 24px rgba(0, 0, 0, .2);
 }
 }
