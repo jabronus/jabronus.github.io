@@ -186,7 +186,7 @@ a:hover {
 	-webkit-transition: 300ms; /*safari and chrome */
 }
 
-nav a {
+nav a, nav a:visited {
 	color: rgb(32, 31, 37);
 	text-decoration-color: rgba(32, 31, 37, .3);
 }
