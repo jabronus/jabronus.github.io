@@ -110,7 +110,10 @@
 }
 
 .video-game {
-
+	color: rgb(0 120 0);
+	border: rgba(0, 184, 0, .2) solid 1.5px;
+	background-color: rgba(220, 248, 120, .2);
+	box-shadow: 0 4px 8px rgba(0, 184, 0, .1);
 }
 
 .video-game::before {
@@ -209,7 +212,10 @@
 }
 
 .video-game {
-
+	color: rgb(220 248 120);
+	border: rgba(0, 184, 0, .5) solid 1.5px;
+	background-color: rgba(220, 248, 120, .2);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
 }
 
 .tabletop {
