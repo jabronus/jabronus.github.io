@@ -59,6 +59,10 @@ section, footer {
 	justify-content: space-between;
 }
 
+.item-data h3 {
+	flex-basis: 350px;
+}
+
 .links {
 	display: inline-flex;
 	flex-wrap: wrap;
