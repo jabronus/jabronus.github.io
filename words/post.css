@@ -242,7 +242,7 @@ aside {
 
 /*Imagery*/
 
-img, picture, video, canvas {
+img, picture, video, canvas, .youtube {
 	border-radius: 16px;
 	box-shadow: 0 8px 24px rgba(172, 128, 0, .3);
 	margin-bottom: var(--medium);
@@ -252,6 +252,20 @@ img, picture, video, canvas, figure {
 	display: block;
 	max-width: 100%;
 	margin-top: var(--medium);
+}
+
+.youtube {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 figcaption {
