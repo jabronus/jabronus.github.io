@@ -242,7 +242,7 @@ aside {
 
 /*Imagery*/
 
-img, picture, video, canvas, .youtube {
+img, picture, video, canvas, .youtube, .video {
 	border-radius: 16px;
 	box-shadow: 0 8px 24px rgba(172, 128, 0, .3);
 	margin-bottom: var(--medium);
@@ -332,7 +332,7 @@ h1 {
 	color: rgb(var(--bg));
 }
 
-img, picture, video, canvas, nav {
+img, picture, video, canvas, nav, .youtube, .video {
 	box-shadow: 0 8px 24px rgba(0, 0, 0, .2);
 }
 }
