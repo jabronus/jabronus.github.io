@@ -205,7 +205,7 @@ h2 a:hover {
 }
 
 ul li::marker, ol li::marker {
-  color: rgba(var(--highlight), 1)
+  color: rgba(var(--highlight), 1);
 }
 
 ul {
@@ -223,7 +223,8 @@ blockquote {
 	max-width: 50ch;
 	padding-inline-start: 1em;
 	border-inline-start: 0.3em solid;
-	border-inline-color: inherit;
+	border-inline-color: rgba(var(--highlight), 1);
+	color: rgba(var(--text), .7);
 }
 
 .callout {
